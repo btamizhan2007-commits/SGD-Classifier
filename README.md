@@ -50,8 +50,7 @@ print("Predicted Species:", iris.target_names[prediction][0])
 ```
 
 ## Output:
-<img width="696" height="59" alt="Screenshot 2026-04-30 143900" src="https://github.com/user-attachments/assets/14784456-3fca-45ad-8a91-cc8822004a35" />
-
+<img width="1913" height="968" alt="Screenshot 2026-05-15 152429" src="https://github.com/user-attachments/assets/50e1194f-b968-44fb-9c81-f37977a66237" />
 
 
 ## Result:
