@@ -22,36 +22,26 @@ Developed by: Tamizhan.B
 RegisterNumber:212225230283
 /*
 
-
-
-from sklearn import datasets
+from google.colab import drive
+drive.mount('/content/drive')
+import pandas as pd 
+from sklearn.datasets import load_iris 
 from sklearn.linear_model import SGDClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split 
+from sklearn.metrics import accuracy_score, confusion_matrix 
+import matplotlib.pyplot as plt 
+import seaborn as sns 
+iris=load_iris() 
+df=pd.DataFrame(data=iris.data, columns=iris.feature_names) 
+df['target']=iris.target 
+print(df.head())
 
-iris = datasets.load_iris()
-X = iris.data
-Y = iris.target
-
-X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=0)
-
-model = SGDClassifier(max_iter=1000, learning_rate='optimal')
-model.fit(X_train, Y_train)
-
-Y_pred = model.predict(X_test)
-
-print("Accuracy:", accuracy_score(Y_test, Y_pred))
-
-sample = [X[0]]
-prediction = model.predict(sample)
-
-print("Predicted Species:", iris.target_names[prediction][0])
 */
 ```
 
 ## Output:
 
-<img width="875" height="472" alt="Screenshot 2026-05-15 152755" src="https://github.com/user-attachments/assets/461499df-d21c-4642-a9aa-e26f3769cdcd" />
+<img width="891" height="407" alt="image" src="https://github.com/user-attachments/assets/24d0674a-08ab-4c58-a5c3-4005de898958" />
 
 ## Result:
 Thus, the program to implement the prediction of the Iris species using SGD Classifier is written and verified using Python programming.
