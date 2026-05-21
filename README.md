@@ -42,6 +42,7 @@ print(df.head())
 ## Output:
 
 <img width="891" height="407" alt="image" src="https://github.com/user-attachments/assets/24d0674a-08ab-4c58-a5c3-4005de898958" />
+<img width="830" height="611" alt="image" src="https://github.com/user-attachments/assets/258fa997-e710-486e-ad29-50f706720299" />
 
 ## Result:
 Thus, the program to implement the prediction of the Iris species using SGD Classifier is written and verified using Python programming.
